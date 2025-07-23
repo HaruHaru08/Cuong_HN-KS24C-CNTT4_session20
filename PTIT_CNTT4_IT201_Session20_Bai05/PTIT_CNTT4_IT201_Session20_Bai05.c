@@ -15,7 +15,7 @@ Node* createNode(int data) {
 }
 int findMaxValue(Node* root) {
     if(root == NULL) {
-        return 0;
+        return -99999999;
     }
     int leftMax=findMaxValue(root->left);
     int rightMax=findMaxValue(root->right);
